@@ -6,7 +6,7 @@ import altair as alt
 
 import joblib
 
-pipe_lr = joblib.load(open(r"C:\Users\admin\OneDrive\Desktop\ted\Model\text_emotion.pkl", "rb"))
+pipe_lr = joblib.load(open(r"Model\text_emotion.pkl", "rb"))
 
 emotions_emoji_dict = {"anger": "😠", "disgust": "🤮", "fear": "😨😱", "happy": "🤗", "joy": "😂", "neutral": "😐", "sad": "😔",
                        "sadness": "😔", "shame": "😳", "surprise": "😮"}
@@ -62,4 +62,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
